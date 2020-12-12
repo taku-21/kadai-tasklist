@@ -17,11 +17,7 @@ ActiveRecord::Schema.define(version: 2020_12_08_072731) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "status"
-    t.bigint "email_id"
-    t.bigint "content_id"
     t.bigint "user_id"
-    t.index ["content_id"], name: "index_tasks_on_content_id"
-    t.index ["email_id"], name: "index_tasks_on_email_id"
     t.index ["user_id"], name: "index_tasks_on_user_id"
   end
 
